@@ -1,12 +1,10 @@
 <?php
-echo $_POST["confirnmationulr"];
-
 $url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
-$access_token = 'tiVaNVZQPaLnTAtrQ2Ta8IR5gJgn'; // check the mpesa_accesstoken.php file for this. No need to writing a new file here, just combine the code as in the tutorial.
+$access_token = $_POST["accesstoken"]; // check the mpesa_accesstoken.php file for this. No need to writing a new file here, just combine the code as in the tutorial.
 $shortCode = '600986'; // provide the short code obtained from your test credentials
 /* This two files are provided in the project. */
-$confirmationUrl = 'https://mydomain.com/confirmation'; // path to your confirmation url. can be IP address that is publicly accessible or a url
-$validationUrl = 'https://mydomain.com/validation'; // path to your validation url. can be IP address that is publicly accessible or a url
+$confirmationUrl = $_POST["confirnmationulr"]; // path to your confirmation url. can be IP address that is publicly accessible or a url
+$validationUrl = $_POST["validationurl"]; // path to your validation url. can be IP address that is publicly accessible or a url
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type:application/json','Authorization:Bearer '.$access_token)); //setting custom header
