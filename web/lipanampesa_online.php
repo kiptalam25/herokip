@@ -12,17 +12,18 @@ curl_setopt($ch, CURLOPT_POSTFIELDS,{
     "Password": "MTc0Mzc5YmZiMjc5ZjlhYTliZGJjZjE1OGU5N2RkNzFhNDY3Y2QyZTBjODkzMDU5YjEwZjc4ZTZiNzJhZGExZWQyYzkxOTIwMjIwNjE1MTMwMTU5",
     "Timestamp": "20220615130159",
     "TransactionType": "CustomerPayBillOnline",
-    "Amount": 1,
-    "PartyA": 254717242625,
+    "Amount": $_POST["amount"],
+    "PartyA": $_POST["phoneA"],
     "PartyB": 174379,
-    "PhoneNumber": 254717242625,
-    "CallBackURL": "https://mydomain.com/path",
+    "PhoneNumber": $_POST["phoneA"],
+    "CallBackURL": "https://whispering-shelf-32403.herokuapp.com/confirmation.php",
     "AccountReference": "CompanyXLTD",
     "TransactionDesc": "Payment of X" 
   });
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $response     = curl_exec($ch);
 curl_close($ch);
+
 echo $response;
 
 ?>
