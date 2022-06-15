@@ -1,7 +1,7 @@
 <?php
 $url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
 $access_token = $_POST["accesstoken"]; // check the mpesa_accesstoken.php file for this. No need to writing a new file here, just combine the code as in the tutorial.
-$shortCode = '600986'; // provide the short code obtained from your test credentials
+$shortCode = '600998'; // provide the short code obtained from your test credentials
 /* This two files are provided in the project. */
 $confirmationUrl = $_POST["confirnmationulr"]; // path to your confirmation url. can be IP address that is publicly accessible or a url
 $validationUrl = $_POST["validationurl"]; // path to your validation url. can be IP address that is publicly accessible or a url
