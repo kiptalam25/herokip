@@ -1,5 +1,5 @@
 <?php
-$str = 'vI3S9AxjyjLvO6o0W19S7sHm0AKLWOlf:VpxUH5d00sCP4zBu';
+$str = 'Wz4JELUAvWk1XbAslnSNyarZ1pw7wp9o:CJfcyc5tGOVMmkYm';
 echo base64_encode($str);
 
 echo "V3o0SkVMVUF2V2sxWGJBc2xuU055YXJaMXB3N3dwOW86Q0pmY3ljNXRHT1ZNbWtZbQ";
