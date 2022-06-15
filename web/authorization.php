@@ -1,8 +1,8 @@
 <?php
-$str = 'Wz4JELUAvWk1XbAslnSNyarZ1pw7wp9o:CJfcyc5tGOVMmkYm';
+$str = ':';
 echo base64_encode($str);
 
-echo "V3o0SkVMVUF2V2sxWGJBc2xuU055YXJaMXB3N3dwOW86Q0pmY3ljNXRHT1ZNbWtZbQ";
+echo "";
 
 
 $ch = curl_init('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials');
