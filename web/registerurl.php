@@ -1,4 +1,5 @@
 <?php
+echo $_POST["confirnmationulr"];
 
 $url = 'https://sandbox.safaricom.co.ke/mpesa/c2b/v1/registerurl';
 $access_token = 'tiVaNVZQPaLnTAtrQ2Ta8IR5gJgn'; // check the mpesa_accesstoken.php file for this. No need to writing a new file here, just combine the code as in the tutorial.
